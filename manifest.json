@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Typer",
+  "version": "1.0.1",
+  "description": "Right-click to prompt Gemini and have it slowly type on the page, with Google Docs support",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Gemini Typer"
+  }
+}
